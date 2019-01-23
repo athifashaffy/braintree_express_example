@@ -12,7 +12,6 @@
     "eslint": "2.7.0",
     "eslint-config-braintree": "^1.0.1",
     "mocha": "^5.2.0",
-    "superagent": "^4.1.0",
     "supertest": "^3.4.1"
   },
   "dependencies": {
@@ -21,11 +20,10 @@
     "connect-flash": "~0.1.1",
     "cookie-parser": "~1.4.0",
     "debug": "^4.1.1",
-    "dotenv": "~1.2.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
-    "pug": "^2.0.3",
     "morgan": "^1.9.1",
+    "pug": "^2.0.3",
     "serve-favicon": "^2.5.0"
   },
   "engines": {
