@@ -85,8 +85,8 @@ router.post('/checkouts', (req, res) => {
 
       return new Promise((resolve, reject) => {
         if (success || transaction) {
-          res.redirect(`checkouts/${transaction.id}`);
-
+          // res.redirect(`checkouts/${transaction.id}`);
+          res.json({ transactionId: transaction.id });
           resolve();
         }
 
@@ -99,7 +99,8 @@ router.post('/checkouts', (req, res) => {
       debug('errors from transaction.sale %O', deepErrors);
 
       req.flash('error', { msg: formatErrors(deepErrors) });
-      res.redirect('checkouts/new');
+      // res.redirect('checkouts/new');
+      res.json({ msg: formatErrors(deepErrors) });
     });
 });
 
